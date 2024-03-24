@@ -1,0 +1,86 @@
+{
+  "project_info": {
+    "project_number": "768409232108",
+    "project_id": "condo-conecta-app-6f55a",
+    "storage_bucket": "condo-conecta-app-6f55a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:768409232108:android:4a448d7579188435fbbbc9",
+        "android_client_info": {
+          "package_name": "com.condoconecta"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmSBdeykyOFYM9G-lzJXBTVZif5A87bFc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:768409232108:android:9f3a1da49c88fbbafbbbc9",
+        "android_client_info": {
+          "package_name": "com.condolivery.CondoLivery"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmSBdeykyOFYM9G-lzJXBTVZif5A87bFc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:768409232108:android:65a7669327a677f9fbbbc9",
+        "android_client_info": {
+          "package_name": "com.condoshop"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmSBdeykyOFYM9G-lzJXBTVZif5A87bFc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:768409232108:android:650782092f8aecbcfbbbc9",
+        "android_client_info": {
+          "package_name": "com.mycompany.icondominio"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmSBdeykyOFYM9G-lzJXBTVZif5A87bFc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

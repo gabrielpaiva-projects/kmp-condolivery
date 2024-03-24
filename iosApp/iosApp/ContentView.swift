@@ -1,8 +1,10 @@
 import UIKit
 import SwiftUI
 import ComposeApp
+import Firebase
 
 struct ComposeView: UIViewControllerRepresentable {
+
     func makeUIViewController(context: Context) -> UIViewController {
         MainViewControllerKt.MainViewController()
     }
@@ -11,6 +13,11 @@ struct ComposeView: UIViewControllerRepresentable {
 }
 
 struct ContentView: View {
+
+    init(){
+       FirebaseApp.configure()
+     }
+
     var body: some View {
         ComposeView()
                 .ignoresSafeArea(.keyboard) // Compose has own keyboard handler

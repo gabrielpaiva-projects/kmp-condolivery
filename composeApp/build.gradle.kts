@@ -4,6 +4,7 @@ plugins {
     alias(libs.plugins.kotlinMultiplatform)
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsCompose)
+    alias(libs.plugins.googleServices)
 }
 
 kotlin {
@@ -43,6 +44,7 @@ kotlin {
             api(compose.animation)
 
             api("moe.tlaster:precompose:1.5.7")
+            implementation("dev.gitlive:firebase-auth:1.11.1") // This line
 
 //            api("moe.tlaster:precompose-molecule:1.5.8") // For Molecule intergration
 
@@ -83,6 +85,7 @@ android {
         targetCompatibility = JavaVersion.VERSION_11
     }
     dependencies {
+        implementation("com.google.firebase:firebase-common-ktx:20.3.3")
         debugImplementation(libs.compose.ui.tooling)
     }
 }

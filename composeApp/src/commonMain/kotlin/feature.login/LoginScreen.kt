@@ -38,8 +38,6 @@ import org.jetbrains.compose.resources.stringResource
 @Composable
 fun LoginScreen() {
 
-    val emailState = remember { mutableStateOf("") }
-
     Column {
         Text(
             stringResource(Res.string.app_name),
@@ -57,6 +55,32 @@ fun LoginScreen() {
             modifier = Modifier.padding(horizontal = 24.dp)
         )
 
+        LoginForm()
+
+        Column(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(top = 24.dp),
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+            Text(
+                "Não possuí uma conta?",
+                color = Color.Black,
+                modifier = Modifier.clickable {
+
+                }
+            )
+        }
+    }
+}
+
+@OptIn(ExperimentalResourceApi::class)
+@Composable
+fun LoginForm() {
+    val emailState = remember { mutableStateOf("") }
+    val passwordState = remember { mutableStateOf("") }
+
+    Column {
         TextField(
             value = emailState.value,
             onValueChange = {
@@ -73,9 +97,9 @@ fun LoginScreen() {
         )
 
         TextField(
-            value = emailState.value,
+            value = passwordState.value,
             onValueChange = {
-                emailState.value = it
+                passwordState.value = it
             },
             label = { Text(text = "Senha") },
             colors = TextFieldDefaults.textFieldColors(
@@ -87,20 +111,6 @@ fun LoginScreen() {
                 .padding(start = 24.dp, end = 24.dp, top = 24.dp)
         )
 
-        Column(
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(top = 24.dp),
-            horizontalAlignment = Alignment.CenterHorizontally
-        ) {
-            Text(
-                "Não possuí uma conta?",
-                color = Color.Black,
-                modifier = Modifier.clickable {
-
-                }
-            )
-        }
         Column(
             modifier = Modifier.fillMaxSize(),
             verticalArrangement = Arrangement.Bottom
@@ -125,9 +135,9 @@ fun LoginScreen() {
                         .padding(16.dp)
                         .height(60.dp),
 
-                )
+                    )
             }
         }
-
     }
+
 }
