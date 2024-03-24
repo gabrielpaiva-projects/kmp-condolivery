@@ -26,9 +26,9 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:768409232108:android:9f3a1da49c88fbbafbbbc9",
+        "mobilesdk_app_id": "1:768409232108:android:5441e5841ce1bc80fbbbc9",
         "android_client_info": {
-          "package_name": "com.condolivery.CondoLivery"
+          "package_name": "com.condolivery"
         }
       },
       "oauth_client": [],
