@@ -1,4 +1,4 @@
-class Greeting {
+class Login {
     private val platform = getPlatform()
 
     fun greet(): String {

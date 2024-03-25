@@ -2,4 +2,7 @@
 <resources>
     <string name="app_name">Condolivery</string>
     <string name="slogan_message">Conectando vizinhos</string>
+    <string name="dont_have_account">Não possuí uma conta?</string>
+    <string name="email">e-mail</string>
+    <string name="password">Senha</string>
 </resources>

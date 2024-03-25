@@ -30,7 +30,13 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import condolivery.composeapp.generated.resources.Res
 import condolivery.composeapp.generated.resources.app_name
+import condolivery.composeapp.generated.resources.dont_have_account
+import condolivery.composeapp.generated.resources.email
+import condolivery.composeapp.generated.resources.password
 import condolivery.composeapp.generated.resources.slogan_message
+import dev.gitlive.firebase.Firebase
+import dev.gitlive.firebase.auth.FirebaseAuth
+import dev.gitlive.firebase.auth.auth
 import org.jetbrains.compose.resources.ExperimentalResourceApi
 import org.jetbrains.compose.resources.stringResource
 
@@ -64,7 +70,7 @@ fun LoginScreen() {
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             Text(
-                "Não possuí uma conta?",
+                stringResource(Res.string.dont_have_account),
                 color = Color.Black,
                 modifier = Modifier.clickable {
 
@@ -86,7 +92,7 @@ fun LoginForm() {
             onValueChange = {
                 emailState.value = it
             },
-            label = { Text(text = "E-mail") },
+            label = { Text(text = stringResource(Res.string.email)) },
             colors = TextFieldDefaults.textFieldColors(
                 backgroundColor = Color.Transparent
             ),
@@ -101,7 +107,7 @@ fun LoginForm() {
             onValueChange = {
                 passwordState.value = it
             },
-            label = { Text(text = "Senha") },
+            label = { Text(text = stringResource(Res.string.password)) },
             colors = TextFieldDefaults.textFieldColors(
                 backgroundColor = Color.Transparent
             ),
@@ -116,7 +122,9 @@ fun LoginForm() {
             verticalArrangement = Arrangement.Bottom
         ) {
             Button(
-                onClick = {},
+                onClick = {
+//                    Firebase.auth.signInWithEmailAndPassword()
+                },
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(horizontal = 24.dp)

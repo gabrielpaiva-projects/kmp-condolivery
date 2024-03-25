@@ -43,14 +43,12 @@ kotlin {
             api(compose.foundation)
             api(compose.animation)
 
-            api("moe.tlaster:precompose:1.5.7")
-            implementation("dev.gitlive:firebase-auth:1.11.1") // This line
+            api("moe.tlaster:precompose:1.6.0-rc05")
+            api("moe.tlaster:precompose-viewmodel:1.6.0-rc05")
+            api("moe.tlaster:precompose-molecule:1.6.0-rc05")
+            api("moe.tlaster:precompose-koin:1.6.0-rc05")
+            implementation("dev.gitlive:firebase-auth:1.11.1")
 
-//            api("m oe.tlaster:precompose-molecule:1.5.8") // For Molecule intergration
-
-//            api("moe.tlaster:precompose-viewmodel:1.6.0-rc04") // For ViewModel intergration
-
-//            api("moe.tlaster:precompose-koin:1.6.0-rc04")
         }
     }
 }
